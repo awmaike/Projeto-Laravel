@@ -18,7 +18,7 @@ return new class extends Migration
             $table->date('data_nascimento');
             $table->string('posicao');
             $table->string('selecao');
-            $table->string('imagem');
+            $table->string('imagem')->nullable();
             $table->timestamps();
         });
     }

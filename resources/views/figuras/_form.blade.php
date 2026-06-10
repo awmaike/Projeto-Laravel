@@ -41,24 +41,8 @@
         @error('imagem') <p class="mt-1 text-sm text-red-600">{{ $message }}</p> @enderror
     </div>
 
-    <div>
-        <label for="peso" class="{{ $labelClass }}">Peso (kg)</label>
-        <input id="peso" name="peso" type="number" min="0" max="999.99" step="0.01" value="{{ old('peso', $figura?->peso) }}" class="{{ $inputClass }}" required>
-        @error('peso') <p class="mt-1 text-sm text-red-600">{{ $message }}</p> @enderror
-    </div>
-
-    <div>
-        <label for="altura" class="{{ $labelClass }}">Altura (m)</label>
-        <input id="altura" name="altura" type="number" min="0" max="9.99" step="0.01" value="{{ old('altura', $figura?->altura) }}" class="{{ $inputClass }}" required>
-        @error('altura') <p class="mt-1 text-sm text-red-600">{{ $message }}</p> @enderror
-    </div>
-</div>
-
 <div class="mt-6 flex items-center justify-end gap-3 border-t border-zinc-200 pt-5 dark:border-zinc-700">
     <flux:button :href="route('figuras.index')" variant="ghost">Cancelar</flux:button>
     <flux:button type="submit" variant="primary">{{ $submitLabel }}</flux:button>
 </div>
-Entre em contato
-  
-Siga nossas redes sociais
- 
+
